@@ -19,6 +19,8 @@ public class LocatorElement {
         page.navigate("https://www.orangehrm.com/hris-hr-software-demo/");
         //print entire list
         Locator locator1 = page.locator("select#Form_submitForm_Country option");
+//    1.     locator1.allTextContents(); - 1st way to print entire list
+        // 2. method using count
         for(int i=0;i<locator1.count();i++){
             System.out.println(locator1.nth(i).textContent());
         }
