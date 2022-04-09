@@ -3,6 +3,8 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+import java.util.Scanner;
+
 public class TextSelector {
     public static void main(String args[]){
         Playwright playwright = Playwright.create();
